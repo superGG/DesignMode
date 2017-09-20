@@ -17,7 +17,7 @@ public class ChocolateFactory {
 		boiled = false;
 	}
 
-	public synchronized static ChocolateFactory getInstance() {
+	public static synchronized ChocolateFactory getInstance() {
 		if (uniqueInstance == null) {
 			uniqueInstance = new ChocolateFactory();
 		}
